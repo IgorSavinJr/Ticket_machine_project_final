@@ -6,12 +6,16 @@ data class Station(
     var returnPrice: Double,
     var salesCount: Int = 0
 ) {
+
     fun getPrice(type: TicketType): Double {
-        // TODO: return price based on type
-        return 0.0
+        return if (type == TicketType.SINGLE) singlePrice else returnPrice
     }
 
-    fun increaseSales() {
-        // TODO: increment salesCount
+    fun increaseSales(count: Int = 1) {
+        salesCount += count
+    }
+
+    override fun toString(): String {
+        return "$name | Single £$singlePrice | Return £$returnPrice | Sales $salesCount"
     }
 }
