@@ -59,7 +59,7 @@ fun mainMenu(machine: TicketMachine, loginManager: LoginManager) {
     }
 }
 
-fun userMenu(machine: TicketMachine) {
+fun user(machine: TicketMachine) {
     while (true) {
         println("\n--- User Menu ---")
         println("1) Search ticket")
