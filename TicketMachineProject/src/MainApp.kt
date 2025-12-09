@@ -13,7 +13,7 @@ fun main() {
     val machine = TicketMachine("Central")
 
     // Sample stations
-    machine.addStation(Station("Lon", 12.50, 20.00))
+    machine.addStation(Station("Lond", 12.50, 20.00))
     machine.addStation(Station("Bristol", 8.00, 14.00))
     machine.addStation(Station("Oxford", 6.50, 11.00))
 
